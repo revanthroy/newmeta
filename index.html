@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/;
+    meshoptDecoderPath: https://unpkg.com/meshoptimizer@0.16.0/meshopt_decoder.js;">
+        <a-assets>
+            <a-asset-item item id="cyber_truck" src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/zombie-car/model.gltf"></a-asserts-item>
+            <a-asset-item id="house" src="https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/house-18/model.gltf"></a-asset-item>
+            <a-asset-item id="helicopter" src="https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/helicopter/model.gltf"></a-asset-item>
+            <a-asset-item id="house2" src="https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/house-7/model.gltf"></a-asset-item>
+            <a-asset-item id="house3" src="https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/house-5/model.gltf"></a-asset-item>
+            <a-asset-item id="windmill" src="https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/wind-turbine/model.gltf"></a-asset-item>
+        </a-assets>
+            <a-entity environment="preset: forest"></a-entity>
+            <a-entity gltf-model="#windmill" position="0 0 -15" scale="5 5 5"></a-entity>
+            <a-entity gltf-model="cyber_truck" position="10 0 -15" scale="5 5 5"></a-entity>
+            <a-entity gltf-model="#helicopter" position="5 0 -15" scale="2 2 2"></a-entity>
+            <a-entity gltf-model="#house2" position="-5 0 -15" scale="2 2 2"></a-entity>
+            
+    </a-scene>
+  </body>
+</html>
